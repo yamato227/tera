@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 蓮通寺</title>
+    <meta name="description" content="蓮通寺へのお問い合わせはこちらから。お問い合わせフォームよりお気軽にご連絡ください。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/kamon.jpg">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="site-logo">
+                <a href="../index.html"> <img src="../img/logo-1.png" alt="浄土真宗 蓮通寺"> </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="./about.html">蓮通寺について</a></li>
+                    <li><a href="./keidai.html">境内紹介</a></li>
+                    <li><a href="./service.html">年間行事・法要</a></li>
+                    <li><a href="./guide.html">ご参拝のしおり</a></li>
+                    <li><a href="./access.html">アクセス</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="モバイルメニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero-about section-common">
+            <picture class="hero-background-image">
+                <source srcset="../img/about_kv_sp-2.jpg" media="(max-width: 767px)">
+                <img src="../img/about_kv_pc-1.jpg" alt="蓮通寺の風景">
+            </picture>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <h1 class="section-title">お問い合わせ</h1>
+                <p>ご質問、ご相談など、お気軽にお問い合わせください。</p>
+            </div>
+        </section>
+
+        <section class="section-common bg-light-gray">
+            <div class="container">
+                <p class="form-description">
+                    ご相談やご質問などがありましたら、以下のフォームよりお問い合わせください。<br>
+                    24時間受け付けております。
+                </p>
+
+                <form action="process_contact.php" method="POST" class="contact-form">
+                    <dl>
+                        <dt>お名前 <span class="required">必須</span></dt>
+                        <dd><input type="text" id="name" name="name" required placeholder="例：山田 太郎"></dd>
+                    </dl>
+                    <dl>
+                        <dt>電話番号 <span class="optional">任意</span></dt>
+                        <dd><input type="tel" id="phone" name="phone" placeholder="例：090-1234-5678"></dd>
+                    </dl>
+                    <dl>
+                        <dt>メールアドレス <span class="required">必須</span></dt>
+                        <dd><input type="email" id="email" name="email" required placeholder="例：info@example.com"></dd>
+                    </dl>
+                    <dl>
+                        <dt>お問い合わせ内容 <span class="required">必須</span></dt>
+                        <dd><textarea id="message" name="message" rows="8" required
+                                placeholder="お問い合わせ内容をご入力ください。"></textarea></dd>
+                    </dl>
+
+                    <div class="privacy-check">
+                        <input type="checkbox" id="privacy-agree" name="privacy-agree" value="同意済み" required>
+                        <label for="privacy-agree">
+                            <a href="./privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する <span
+                                class="required">必須</span> </label>
+                    </div>
+                    <p class="note" style="text-align: center; margin-top: 15px;">
+                        ※ご返信には数日いただく場合がございます。お急ぎの場合はお電話をご利用ください。
+                    </p>
+                    <button type="submit" class="btn btn-submit">送信する</button>
+                </form>
+
+                <div class="contact-info-block">
+                    <h2>お電話でのお問い合わせ</h2>
+                    <p class="phone-number">0749-88-0713</p>
+                    <p class="note">受付時間: 10:00 - 16:00 (年中無休)</p>
+                    <a href="tel:0749880713" class="btn btn-primary">今すぐ電話する</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#top" id="page-top">
+        <span class="arrow-up">▲</span>
+        <span class="top-text">TOP</span>
+    </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="../img/logo-1.png" alt="蓮通寺ロゴ">
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="../index.html">ホーム</a></li>
+                        <li><a href="./about.html">蓮通寺について</a></li>
+                        <li><a href="./keidai.html">境内紹介</a></li>
+                        <li><a href="./service.html">年間行事・法要</a></li>
+                        <li><a href="./guide.html">ご参拝のしおり</a></li>
+                        <li><a href="./access.html">アクセス</a></li>
+                        <li><a href="./privacy.html">プライバシーポリシー</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">© 2025 Rentsuji. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
